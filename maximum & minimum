@@ -1,5 +1,7 @@
-Write a program to initialize an integer array with the command line arguments and print the sum and average of the array.
+Write a program to initialize an integer array and find the maximum and minimum value of an array
 The number of Arguments is limited to maximum of 10.
+Integer.MAX_VALUE
+Integer.MIN_VALUE
 
 Solution :
 
