@@ -1,0 +1,35 @@
+public class Account
+{
+    double balance;
+    void addBalance(double value)
+    {
+        balance=balance+value;
+    }
+    void withdrawBalance(double value)
+    {
+        balance=balance-value;
+        if(value+1000<=balance)
+              balance=balance-value;
+        else
+              System.out.println("Insufficent Balance");
+    }
+    double getBalance()
+    {
+        return balance;
+    }
+    public static void main(String args[])
+    {
+        Account acc=new Account();
+        acc.addBalance(1000);
+        acc.addBalance(acc.getBalance()*2);
+        System.out.println("before Withdraw"+acc.getBalance());
+        acc.withdrawBalance(2500);
+        System.out.println("after Withdraw"+acc.getBalance());
+    }
+}
+
+
+Output:
+before Withdraw3000.0
+Insufficent Balance
+after Withdraw500.0
